@@ -4,11 +4,39 @@
   padding: 0;
 }
 
+body {
+  background: teal;
+  margin: 20px;
+}
+
+.baseContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: rgb(170, 172, 165);
+  border: double;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 0px 20px;
+}
+
 #gridContainer {
   display: flex;
   flex-direction: column;
   width: 600px;
   height: 600px;
+  flex-shrink: 0;
+  border: double;
 }
 
 .rowElement {

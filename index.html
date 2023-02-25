@@ -11,6 +11,17 @@
   </head>
 
   <body>
-    <div id="gridContainer"></div>
+    <div class="baseContainer">
+      <div class="menuContainer">
+        <h1>Hover over the area to draw</h1>
+        <h2>Select options below to modify sketch function</h2>
+        <div class="slider">
+          <p>Slide to slecet grid pixel width/height</p>
+          <input type="range" min="16" max="128" value="64" class="sliderValue" id="myRange">
+          <p id="sizeDisplay"></p>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+    </div>
   </body>
 </html>
