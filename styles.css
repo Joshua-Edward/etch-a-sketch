@@ -3,3 +3,22 @@
   margin: 0;
   padding: 0;
 }
+
+#gridContainer {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 600px;
+}
+
+.rowElement {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.pixelElement {
+  flex: 1 0 auto;
+  height: 100%;
+  background: black;
+}
