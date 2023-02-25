@@ -1,7 +1,5 @@
-const divGridContainer = document.createElement('div');
-divGridContainer.setAttribute('id','gridContainer');
-
 let gridSize = 64;
+let divGridContainer = document.getElementById('gridContainer');
 
 for (j = 0; j < gridSize; j++) {
   const gridRow = document.createElement('div');
@@ -14,10 +12,6 @@ for (j = 0; j < gridSize; j++) {
     }
     divGridContainer.appendChild(gridRow);
 }
-const body = document.body;
-body.appendChild(divGridContainer);
-
-
 
 function changeColor(e) {
   e.target.style.backgroundColor = '#f4f4f4';
