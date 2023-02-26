@@ -5,7 +5,7 @@
 }
 
 body {
-  background: teal;
+  background: rgb(59, 85, 133);
   margin: 20px;
 }
 
@@ -18,10 +18,13 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: rgb(170, 172, 165);
-  border: double;
+  justify-content: space-around;
+  background: rgb(54, 128, 116);
+  border: black double;
   border-radius: 10px;
   gap: 10px;
+  padding: 10px;
+  color: white;
 }
 
 .slider {
@@ -37,6 +40,7 @@ body {
   height: 600px;
   flex-shrink: 0;
   border: double;
+  background: rgba(241, 225, 201, 0.925);
 }
 
 .rowElement {
@@ -48,5 +52,48 @@ body {
 .pixelElement {
   flex: 1 0 auto;
   height: 100%;
+  opacity: 0;
   background: black;
+}
+
+#switcher {
+  background: rgb(88, 98, 151);
+  width: 300px;
+  height: 75px;
+  border: double black;
+  border-radius: 10px;
+  align-self: center;
+  font-size: 30px;
+}
+
+.styleDisplay {
+  display: flex;
+  border: double black;
+  height: 50px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.standard {
+  opacity: 1;
+  background:rgba(241, 225, 201, 0.925);
+  color: black;
+}
+
+.shading {
+  opacity: 1;
+  background:rgba(241, 225, 201, 0.925);
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.randomColor {
+  opacity: 1;
+  background:rgba(241, 225, 201, 0.925);
+}
+
+.off {
+  opacity: 0.5;
+  background: lightslategrey;
+  color: white;
 }

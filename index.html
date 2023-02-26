@@ -14,12 +14,23 @@
     <div class="baseContainer">
       <div class="menuContainer">
         <h1>Hover over the area to draw</h1>
-        <h2>Select options below to modify sketch function</h2>
+        <h2>Select options below to modify sketching</h2>
         <div class="slider">
           <p>Slide to slecet grid pixel width/height</p>
           <input type="range" min="16" max="64" value="40" class="sliderValue" id="myRange">
           <p id="sizeDisplay"></p>
         </div>
+        <button id="switcher" value='0'>Click to Change</button>
+        <div id="standard" class="styleDisplay standard">Standard Draw</div>
+        <div id="shading" class="styleDisplay shading off">Shade In</div>
+        <div id="randomColor" class="styleDisplay randomColor off">
+          <font color="#42d7f5">R</font>
+          <font color="#cc7110">a</font>
+          <font color="#b942f5">n</font>
+          <font color="#4bf542">d</font>
+          <font color="#f54260">o</font>
+          <font color="#097682">m</font>
+         </div>
       </div>
       <div id="gridContainer"></div>
     </div>
